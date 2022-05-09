@@ -2,3 +2,24 @@
 ---
 
 @import "{{ site.theme }}";
+
+/* Sidenav */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	  background-color: #141414;
+    overflow-x: hidden;
+    padding: 25px 25px 25px 25px;
+}
+
+/* Section - for main page content */
+
+section {
+    width:1000px;
+    margin-left:290px;
+    padding-bottom: 100px;
+}
