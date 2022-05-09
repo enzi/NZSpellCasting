@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidenav">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h6>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <ul>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/">Getting Started</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/tutorial">Tutorial</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/standard-characters">Standard Characters</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/samples">Samples</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/core">Core</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/how-to">How-To</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/tips">Tips</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/faqs">FAQs</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/changelog">Changelog</a></li>
+            <li><a class="sidebar_buttons" href="https://philsa.github.io/rival-doc/contact">Contact</a></li>
+            <li><a class="sidebar_buttons" href="https://github.com/PhilSA/rival-doc">View On GitHub</a></li>
+        </ul>
+      </div>
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
